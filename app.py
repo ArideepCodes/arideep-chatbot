@@ -25,7 +25,11 @@ if prompt := st.chat_input("Say something to Arideep's AI..."):
     # Fake typing effect for assistant reply
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
-        full_response = "Hi! I'm a demo chatbot 🤖. OpenAI is not connected right now."
+        full_response = (
+            "Hello! I'm a chatbot created by Arideep Kanshabanik. "
+            "This is just a demo reply because the API is not connected. "
+            "Please connect the API to use my full capabilities."
+        )
 
         typed_response = ""
         for word in full_response.split():
